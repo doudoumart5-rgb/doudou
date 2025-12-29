@@ -1,0 +1,356 @@
+/* ====================================
+   Participant Dashboard - DAW2 2025/2026
+   Université Constantine 2 - Abdelhamid Mehri
+   Thème Santé Numérique
+   ==================================== */
+
+.min-h-screen {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f8fafc, #e6f0fa);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2d3748;
+}
+
+/* Header fixe */
+header {
+  background-color: #ffffff;
+  border-bottom: 4px solid #006a4e; /* Vert institutionnel algérien */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #004d40;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  font-size: 1rem;
+}
+
+header nav a,
+header nav Link {
+  color: #004d40;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #009688;
+}
+
+.notification-badge-parent {
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background-color: #d32f2f;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-info .text p {
+  margin: 0;
+  text-align: right;
+}
+
+.user-info .text p:first-child {
+  font-weight: 600;
+  color: #003d33;
+}
+
+.user-info .text p:last-child {
+  font-size: 0.9rem;
+  color: #00695c;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  background-color: #006a4e;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #e0f2f1;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #d32f2f;
+  font-size: 1.4rem;
+  padding: 8px;
+  transition: transform 0.2s;
+}
+
+.logout-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Icônes */
+.icon {
+  font-size: 1.2rem;
+  margin-right: 6px;
+}
+
+/* Contenu principal */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.welcome {
+  text-align: center;
+  margin: 2rem 0 3rem;
+}
+
+.welcome h2 {
+  font-size: 2.4rem;
+  color: #003d33;
+  margin-bottom: 0.5rem;
+}
+
+.welcome p {
+  font-size: 1.2rem;
+  color: #455a64;
+}
+
+/* Placeholder événement en cours */
+.current-event.placeholder {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+  border-left: 6px solid #006a4e;
+}
+
+.current-event.placeholder h3 {
+  color: #004d40;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.current-event.placeholder p {
+  color: #546e7a;
+  margin-bottom: 2rem;
+}
+
+/* Bouton live */
+.btn-live {
+  display: inline-block;
+  background-color: #006a4e;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 106, 78, 0.3);
+}
+
+.btn-live:hover {
+  background-color: #004d40;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 106, 78, 0.4);
+}
+
+/* Section événements */
+section h3 {
+  font-size: 1.8rem;
+  color: #003366;
+  margin: 2.5rem 0 1.5rem;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #006a4e;
+}
+
+/* Grille événements */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+}
+
+/* Carte événement */
+.event-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  border: 1px solid #e0f2f1;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 106, 78, 0.15);
+}
+
+.header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1.5rem 0;
+}
+
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.status-futur {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.status-termine {
+  background-color: #e8f5e8;
+  color: #2e7d32;
+}
+
+.event-card h4 {
+  padding: 0 1.5rem;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  color: #003366;
+}
+
+.details {
+  padding: 0 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #455a64;
+  font-size: 1rem;
+}
+
+.details div {
+  margin: 0.6rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.actions {
+  padding: 1.5rem;
+  background-color: #f1f8f7;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.btn-download {
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+  background-color: #2e7d32;
+}
+
+/* Notifications */
+.notifications {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.notif-item {
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid #e0f2f1;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: background-color 0.2s;
+}
+
+.notif-item:hover {
+  background-color: #f0fdfa;
+}
+
+.notif-item:last-child {
+  border-bottom: none;
+}
+
+.notif-item p {
+  margin: 0;
+  color: #37474f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .welcome h2 {
+    font-size: 2rem;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}

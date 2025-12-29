@@ -1,12 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
-import Footer from "./components/fotter";
+import Footer from "./components/fotter";        // Attention ici aussi : "fotter" → "footer" ?
 import Home from "./pages/home";
 import Evenements from "./pages/Evenements";
 import MyEvent from "./pages/myevent";
-import Signup from "./pages/sign up";
-import Login from "./pages/Login";   // ✅ Correct import
+import Signup from "./pages/sign up";             // Attention : espace dans le nom !
+import Login from "./pages/Login";  
+import Participant from "./pages/particpant";    // ← CORRIGÉ !
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         <Route path="/evenements" element={<Evenements />} />
         <Route path="/myevent" element={<MyEvent />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />   // ✅ Correct usage
+        <Route path="/login" element={<Login />} />
+        <Route path="/participant" element={<Participant />} />  {/* Maintenant ça marche ! */}
       </Routes>
 
       <Footer />

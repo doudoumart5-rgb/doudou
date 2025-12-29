@@ -24,9 +24,9 @@ function Navbar() {
         {/* Use Link instead of <a> whenever possible */}
         <li><Link to="/signup">Sign Up</Link></li>
         <li><Link to="/contact">Contact👤</Link></li>
-
+        <li><Link to="/participant">Participant</Link></li> 
         <li><Link to="/login">Login</Link></li>
-      </ul>
+       </ul>
     </nav>
   );
 }

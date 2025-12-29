@@ -35,6 +35,8 @@ function Footer() {
               <li><a href="/evenements">Événements</a></li>
               <li><a href="/signup">Sign Up</a></li>
               <li><a href="#contact">Contact</a></li>
+              <li><a href="#participant">participantt</a></li>
+              
             </ul>
           </div>
 

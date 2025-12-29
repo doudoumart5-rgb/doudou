@@ -48,7 +48,9 @@ function Home() {
     setTimeout(() => setLoading(false), 1000);
 
     // Timer للعرض الخاص
-    const endDate = new Date("2025-12-25T23:59:59");
+   const endDate = new Date();
+endDate.setDate(endDate.getDate() + 70); // ajoute 70 jours
+
     const timer = setInterval(() => {
       const now = new Date();
       const diff = endDate - now;

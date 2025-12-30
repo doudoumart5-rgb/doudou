@@ -9,7 +9,7 @@ import Signup from "./pages/sign up";             // Attention : espace dans le 
 import Login from "./pages/Login";  
 import Participant from "./pages/particpant";    // ← CORRIGÉ !
 
-function App() {
+function App() {  
   return (
     <Router>
       <Navbar />
@@ -20,7 +20,8 @@ function App() {
         <Route path="/myevent" element={<MyEvent />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/participant" element={<Participant />} />  {/* Maintenant ça marche ! */}
+        <Route path="/participant" element={<Participant />} /> 
+         {/* Maintenant ça marche ! */}
       </Routes>
 
       <Footer />

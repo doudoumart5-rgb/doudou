@@ -1,0 +1,43 @@
+
+
+[
+    {
+        "id":0,
+        "title":"Congrès sur la Santé",
+        "location":"Université Constantine 2 — Faculté NTIC",
+        "heroDesc":"Découvrez les dernières avancées médicales et innovations en santé publique.",
+        "mainDesc":"This health event explores the latest advancements in medical technology and patient care, highlighting innovations that improve diagnosis, treatment, and overall wellness.",
+        "whyJoinDesc":"Attendees will learn from experts, discover new solutions, and gain insights into the future of healthcare.",
+        "date":"March 22, 2025",
+        "organiser":"Laboratoire de la Santé",
+        "image":"./images/myevent.jpg",
+        "time":"09:00 — 17:30"
+        
+    },
+    {
+        "id":1,
+        "title":"Science & Tech Event",
+        "location":"Université Constantine 2 — Faculté NTIC",
+        "heroDesc":"Discover the latest breakthroughs in science, technology, innovation, and research. Join workshops, seminars, and networking sessions.",
+        "mainDesc":"The platform for managing scientific things at <strong>Université Constantine 2</strong> is kind of made to handle… well, almost everything related to events, but not always in the same order. Sometimes it starts with submissions, other times participants register first, or maybe the organizers set up the committees before anything else. 🎓 It covers congresses, workshops, seminars, and a lot of stuff that gets mixed depending on who’s using it.",
+        "whyJoinDesc":"Well, participants usually find something interesting—research, networking, unexpected workshops, or just meeting people from random institutions. It’s all about discovering things and sometimes figuring out how the program fits together.",
+        "date":"March 22, 2025",
+        "organiser":"Innovation & Research Department",
+        "image":"./images/myevent.jpg",
+        "time":"09:00 — 17:30"
+        
+    },
+    {
+        "id":2,
+        "title":"Séminaire Innovation Médicale",
+        "location":"Université Constantine 2 — Faculté NTIC",
+        "heroDesc":"Échanges approfondis avec des chercheurs et experts du domaine médical.",
+        "mainDesc":"This event focuses on the latest innovations in X-ray imaging, showcasing cutting-edge technologies, advanced techniques, and emerging solutions that are transforming diagnostics and patient care. Participants will explore how these developments improve image quality, reduce radiation exposure, and enhance clinical decision-making.",
+        "whyJoinDesc":"to stay at the forefront of healthcare advancements, discover groundbreaking technologies, and learn from experts about new treatments and solutions. It offers a unique opportunity to network with professionals, exchange ideas, and gain insights that could inspire research, improve patient care, or drive innovation in their own work.",
+        "date":"March 22, 2025",
+        "organiser":"SIEMENS Healthineers",
+        "image":"./images/myevent.jpg",
+        "time":"09:00 — 17:30"
+        
+    }
+]

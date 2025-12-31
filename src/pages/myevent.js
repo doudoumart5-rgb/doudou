@@ -44,7 +44,9 @@ function MyEvent() {
           organizers set up the committees before anything else. 🎓 It covers congresses, workshops, 
           seminars, and a lot of stuff that gets mixed depending on who’s using it.
         </p>
-
+{
+// TOO LONG for a component to have as an argument 
+/*
         <p>
           These scientific events are basically places where people — researchers, students, teachers, 
           professionals — all gather to talk, share, maybe present something, maybe just listen. 
@@ -80,9 +82,11 @@ function MyEvent() {
             somewhere for future events that may or may not use the same structure.
           </li>
         </ul>
-
+*/}
         <p>
-          🌟 <strong>Why join?</strong> Well, participants usually find something interesting—research, 
+          🌟 <strong>Why join?</strong> 
+          <br></br>
+          Well, participants usually find something interesting—research, 
           networking, unexpected workshops, or just meeting people from random institutions. It’s all about 
           discovering things and sometimes figuring out how the program fits together.
         </p>
@@ -99,20 +103,29 @@ function MyEvent() {
         </p>
   */
         }
+
+        {
+
+          //this paragraph 's talking about the platform , not the event ==> no need for it
+          /*
         <p>
           ✅ Overall, the platform tries to keep everything clear, even when things shift around. 
           It offers management, transparency, and access — although users sometimes need to navigate 
           through all the features to figure out where everything is happening.
         </p>
+        */
+        }
       </div>
 
       {/* IMAGE GALLERY */}
-      <div className="event-gallery">
+      {
+  /*
+  <div className="event-gallery">
         <img src={campus} alt="Campus UC2" />
         <img src={lab} alt="Laboratory" />
         <img src={tech} alt="Technology" />
       </div>
-
+*/}
       {/* INFO BOXES */}
       <div className="event-info">
         <div className="info-box">

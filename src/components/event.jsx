@@ -5,18 +5,22 @@ import React from 'react'
 // result : a main of a page that describes this event
 
 
-export default function Event({title ,location ,description , date }) {
-  return (
+function Event({
+    title ,location, 
+    heroDesc ,mainDesc, 
+    whyJoinDesc , date , organiser ,
+    image , time
+
+    }) {
+    return (
     <div className="myevent-page">
 
       {/* HERO SECTION */}
       <div className="hero-section">
         <div className="left">
           <h2>{title}</h2>
-          <h3>in {location}</h3>
           <p>
-            Discover the latest breakthroughs in science, technology, innovation, 
-            and research. Join workshops, seminars, and networking sessions.
+            {heroDesc}
           </p>
           <div>
             <Link to="/signup">
@@ -28,7 +32,7 @@ export default function Event({title ,location ,description , date }) {
         {/* RIGHT SIDE IMAGE */}
         <div
           className="right"
-          style={{ backgroundImage: `url(${myevent})` }}
+          style={{ backgroundImage: `url(${image})` }}
         ></div>
       </div>
 
@@ -37,88 +41,25 @@ export default function Event({title ,location ,description , date }) {
         <h3>📌 Event Description</h3>
 
         <p>
-          The platform for managing scientific things at <strong>Université Constantine 2</strong> is kind of 
-          made to handle… well, almost everything related to events, but not always in the same order. 
-          Sometimes it starts with submissions, other times participants register first, or maybe the 
-          organizers set up the committees before anything else. 🎓 It covers congresses, workshops, 
-          seminars, and a lot of stuff that gets mixed depending on who’s using it.
+            {mainDesc}
         </p>
 
         <p>
-          These scientific events are basically places where people — researchers, students, teachers, 
-          professionals — all gather to talk, share, maybe present something, maybe just listen. 
-          It depends. They come from everywhere: <strong>AI, health sciences, robotics, biotech, cybersecurity</strong>, 
-          or whatever field fits. 🧪🤖💻 Sometimes it's super structured, sometimes it's more like everyone 
-          just trying to understand what’s happening next.
+          🌟 <strong>Why join?</strong> 
+          <br></br>
+            {whyJoinDesc}
         </p>
 
-        <p>✨ <strong>What the platform somehow includes (not always in this order):</strong></p>
 
-        <ul>
-          <li>
-            📝 <strong>Before the event?</strong> You can create an event, or maybe edit it later, 
-            or maybe the committee isn't added yet — things move around. CFPs might be launched before 
-            everything is finalized. Participants register while reviews are still pending. Roles get mixed.
-          </li>
-
-          <li>
-            📄 <strong>Submissions & evaluations</strong> happen at different speeds. Some proposals 
-            get evaluated fast, others wait. Abstracts, keywords, posters, whatever type — they all go 
-            somewhere in the system. Reviewers score things but sometimes the reports come later or earlier.
-          </li>
-
-          <li>
-            🎤 <strong>During the event</strong>, the program exists, but sessions change rooms, workshops 
-            may overlap, keynotes are sometimes moved. Q&A works… unless the network lags. Polls appear 
-            randomly. Notifications pop up even when nothing has changed.
-          </li>
-
-          <li>
-            📊 <strong>Afterward</strong>, certificates are generated — sometimes instantly, sometimes 
-            after a refresh. Stats come in, some are detailed, others confusing. Everything gets archived 
-            somewhere for future events that may or may not use the same structure.
-          </li>
-        </ul>
-
-        <p>
-          🌟 <strong>Why join?</strong> Well, participants usually find something interesting—research, 
-          networking, unexpected workshops, or just meeting people from random institutions. It’s all about 
-          discovering things and sometimes figuring out how the program fits together.
-        </p>
-
-        {
-            // this is repeated on the end of the page so i hide it 
-
-            /*
-            <p>
-          📍 <strong>Event Details (at least these don’t change… usually):</strong><br />
-          Venue: Université Constantine 2 — Faculté NTIC<br />
-          Date: March 22, 2025<br />
-          Time: 09:00 — 17:30<br />
-          Organized by: UC2 — Innovation & Research Department
-        </p>
-        */
-}
-
-        <p>
-          ✅ Overall, the platform tries to keep everything clear, even when things shift around. 
-          It offers management, transparency, and access — although users sometimes need to navigate 
-          through all the features to figure out where everything is happening.
-        </p>
+        
       </div>
 
-      {/* IMAGE GALLERY */}
-      <div className="event-gallery">
-        <img src={campus} alt="Campus UC2" />
-        <img src={lab} alt="Laboratory" />
-        <img src={tech} alt="Technology" />
-      </div>
-
+ 
       {/* INFO BOXES */}
       <div className="event-info">
         <div className="info-box">
           <h4>📍 Location</h4>
-          <p>Université Constantine 2 — Faculté NTIC</p>
+          <p>{location}</p>
         </div>
         <div className="info-box">
           <h4>📅 Date</h4>
@@ -126,14 +67,19 @@ export default function Event({title ,location ,description , date }) {
         </div>
         <div className="info-box">
           <h4>⏰ Time</h4>
-          <p>09:00 — 17:30</p>
+          <p>{time}</p>
         </div>
         <div className="info-box">
           <h4>👥 Organized by</h4>
-          <p>Innovation & Research Department</p>
+          <p>{organiser}</p>
         </div>
       </div>
 
     </div>
   );
+  
 }
+
+
+
+export default Event ;

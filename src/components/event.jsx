@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
+import './event.css'
 // this is a reuasable componenet 
 // data of the event (title , dates , topic ---etc)
 // result : a main of a page that describes this event

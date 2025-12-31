@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"; // ✅ Needed for <Link>
 import "./myevent.css";
-import campus from "../images/lab.jpg (2)d.jpg";
-import lab from "../images/lab.jpg.jpg";
-import tech from "../images/tech.jpg.jpg";
 import myevent from "../images/myevent.jpg";
 
 function MyEvent() {

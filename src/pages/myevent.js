@@ -86,7 +86,10 @@ function MyEvent() {
           networking, unexpected workshops, or just meeting people from random institutions. It’s all about 
           discovering things and sometimes figuring out how the program fits together.
         </p>
+{
 
+  // i hided this details because it's repeated in the end of the page (line :116) 
+  /*
         <p>
           📍 <strong>Event Details (at least these don’t change… usually):</strong><br />
           Venue: Université Constantine 2 — Faculté NTIC<br />
@@ -94,7 +97,8 @@ function MyEvent() {
           Time: 09:00 — 17:30<br />
           Organized by: UC2 — Innovation & Research Department
         </p>
-
+  */
+        }
         <p>
           ✅ Overall, the platform tries to keep everything clear, even when things shift around. 
           It offers management, transparency, and access — although users sometimes need to navigate 

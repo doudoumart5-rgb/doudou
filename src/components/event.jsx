@@ -87,6 +87,8 @@ export default function Event({title ,location ,description , date }) {
         </p>
 
         {
+            // this is repeated on the end of the page so i hide it 
+
             /*
             <p>
           📍 <strong>Event Details (at least these don’t change… usually):</strong><br />
@@ -96,7 +98,7 @@ export default function Event({title ,location ,description , date }) {
           Organized by: UC2 — Innovation & Research Department
         </p>
         */
-        }
+}
 
         <p>
           ✅ Overall, the platform tries to keep everything clear, even when things shift around. 

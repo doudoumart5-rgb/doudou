@@ -14,17 +14,19 @@ function Evenements() {
       image: event1,
       title: "Congrès sur la Santé",
       description: "Découvrez les dernières avancées médicales et innovations en santé publique.",
+      link:"/event0"
     },
     {
       image: event2,
       title: "Science & Tech Events 🧬",
       description: "Découvrez les meilleurs événements scientifiques et technologiques près de chez vous.",
-      link: "/myevent",
+      link:"/event1"
     },
     {
       image: event3,
       title: "Séminaire Innovation Médicale",
       description: "Échanges approfondis avec des chercheurs et experts du domaine médical.",
+      link:"/event2"
     },
   ];
 

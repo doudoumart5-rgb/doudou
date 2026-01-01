@@ -12,6 +12,9 @@ import Participant from "./pages/particpant";    // ← CORRIGÉ !
 
 import eventImg from "./images/myevent.jpg";
 import Event from "./components/event";
+import eventsData from "./eventsData.json"
+
+
 
 function App() {  
   return (
@@ -21,7 +24,34 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/evenements" element={<Evenements />} />
-        <Route path="/myevent" element={<Event 
+        
+        {
+          //for each event in eventsData.json ==> create a page
+          eventsData.map((event,index)=>{
+            return <Route
+              path={`/event${index}`}
+              element={
+              <Event
+                key={event.id}
+                image={event.image}
+                title={event.title}
+                location={event.location}
+                date={event.date}
+                time={event.time}
+                organiser={event.organiser}
+                heroDesc={event.heroDesc}
+                mainDesc={event.mainDesc}
+                whyJoinDesc={event.whyJoinDesc}
+              />
+             }
+            />
+          })
+        }
+        
+        {
+          /*
+          
+          <Route  path="/event0" element={<Event 
         key={1}
         image={eventImg}
         title={"Science & Tech Events"}
@@ -34,6 +64,11 @@ function App() {
         whyJoinDesc={"Well, participants usually find something interesting—research, networking, unexpected workshops, or just meeting people from random institutions. It’s all about discovering things and sometimes figuring out how the program fits together."}
          />
         }/>
+
+          */ 
+
+        }
+        
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/participant" element={<Participant />} /> 

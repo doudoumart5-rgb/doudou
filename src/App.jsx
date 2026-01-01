@@ -4,13 +4,11 @@ import Navbar from "./components/navbar";
 import Footer from "./components/fotter";        // Attention ici aussi : "fotter" → "footer" ?
 import Home from "./pages/home";
 import Evenements from "./pages/Evenements";
-//import MyEvent from "./pages/myevent";
 import Signup from "./pages/sign up";             // Attention : espace dans le nom !
 import Login from "./pages/Login";  
 import Participant from "./pages/particpant";    // ← CORRIGÉ !
 
 
-import eventImg from "./images/myevent.jpg";
 import Event from "./components/event";
 import eventsData from "./eventsData.json"
 

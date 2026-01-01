@@ -7,7 +7,7 @@ import Evenements from "./pages/Evenements";
 import Signup from "./pages/sign up";             // Attention : espace dans le nom !
 import Login from "./pages/Login";  
 import Participant from "./pages/particpant";    // ← CORRIGÉ !
-
+import ScrollToTop from "./components/ScrollToTop";
 
 import Event from "./components/event";
 import eventsData from "./eventsData.json"
@@ -17,6 +17,7 @@ import eventsData from "./eventsData.json"
 function App() {  
   return (
     <Router>
+      <ScrollToTop/>
       <Navbar />
 
       <Routes>

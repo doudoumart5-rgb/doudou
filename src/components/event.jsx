@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './event.css'
+
+import { images } from '../images/images';
+//import IMG from "../images/CNRS.jpg"
 // this is a reuasable componenet 
 // data of the event (title , dates , topic ---etc)
 // result : a main of a page that describes this event
-
-
 function Event({
     title ,location, 
     heroDesc ,mainDesc, 
@@ -33,7 +34,7 @@ function Event({
         {/* RIGHT SIDE IMAGE */}
         <div
           className="right"
-          style={{ backgroundImage: `url(${image})` }}
+          style={{ backgroundImage: `url(${images[image]})` } }
         ></div>
       </div>
 

@@ -58,7 +58,14 @@
   background-color: #e9f2ff;
   transform: translateY(-2px);
 }
-/* RIGHT SIDE IMAGE */ .hero-section .right { flex: 0.9; background-image: url("../images/logo.jpg"); background-size: cover; /* cover the area */ background-position: center; /* center the image */ filter: brightness(0.85); /* elegant touch */ }
+/* RIGHT SIDE IMAGE */ 
+.hero-section .right { 
+  flex: 0.9; 
+  /*background-image: url("../images/logo.jpg");*/ 
+  background-size: cover; /* cover the area */ 
+  background-position: center; /* center the image */ 
+  /*filter: brightness(0.85); /* elegant touch */ 
+}
 /* DESCRIPTION CARD */
 .event-card {
   width: 90%;

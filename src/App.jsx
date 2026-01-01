@@ -11,7 +11,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 import Event from "./components/event";
 import eventsData from "./eventsData.json"
-import img from "./images/myevent.jpg"
+//import img from "/images/myevent.jpg"
 
 
 function App() {  

@@ -8,10 +8,8 @@ import Signup from "./pages/sign up";             // Attention : espace dans le 
 import Login from "./pages/Login";  
 import Participant from "./pages/particpant";    // ← CORRIGÉ !
 import ScrollToTop from "./components/ScrollToTop";
-
 import Event from "./components/event";
 import eventsData from "./eventsData.json"
-//import img from "/images/myevent.jpg"
 
 
 function App() {  

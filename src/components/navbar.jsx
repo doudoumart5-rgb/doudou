@@ -19,7 +19,7 @@ function Navbar() {
       <ul className="nav-links">
         <li><Link to="/">Accueil 🏠</Link></li>
         <li><Link to="/evenements">Événements📅 </Link></li>
-        <li><Link to="/myevent">My Event</Link></li>
+        {/*<li><Link to="/myevent">My Event</Link></li>*/}
 
         {/* Use Link instead of <a> whenever possible */}
         <li><Link to="/signup">Sign Up</Link></li>
